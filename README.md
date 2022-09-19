@@ -1,2 +1,2 @@
-# diaeasy-microsservices
+# Diaeasy-microsservices
 Microsservices for Diaeasy project.
