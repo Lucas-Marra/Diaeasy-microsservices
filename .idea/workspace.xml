@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c97a1c8-5822-4309-b8e0-3c8353edd3d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/paciente/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/PacienteApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +44,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "spring.configuration.checksum": "7a2d63b26e0edf226d41ada699d6cb03"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "b78ce8f9afa5ed9ace994453edfc0393"
   }
 }]]></component>
   <component name="RunManager">
@@ -80,7 +77,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663367247941</updated>
-      <workItem from="1663547798815" duration="2866000" />
+      <workItem from="1663547798815" duration="5493000" />
+      <workItem from="1663616884515" duration="296000" />
     </task>
     <servers />
   </component>
@@ -92,7 +90,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="desenvolvimento" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
