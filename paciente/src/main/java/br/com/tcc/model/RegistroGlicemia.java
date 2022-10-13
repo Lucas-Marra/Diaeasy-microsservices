@@ -6,9 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Entity
+// TODO deixar somente getters and setters
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -16,22 +17,13 @@ import java.math.BigDecimal;
 public class RegistroGlicemia {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_glicemia")
     private Long id;
-
-    private BigDecimal valor;
-    private String data;
-    private String hora;
-
-    @Column(name = "data_refeicao")
-    private String dataRefeicao;
-
-    @Column(name = "hora_refeicao")
-    private String horaRefeicao;
-
+    // TODO encriptar valor;
+    private Double valor;
+    private LocalDateTime horario;
+    private LocalDateTime horarioRefeicao;
     private String observacao;
 
-    //TODO mudar nome no banco de dados
     @ManyToOne(optional = false)
     private Paciente paciente;
 }

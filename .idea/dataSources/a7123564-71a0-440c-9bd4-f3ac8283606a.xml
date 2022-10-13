@@ -1170,8 +1170,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="329" parent="303" name="id_paciente">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="329" parent="303" name="id">
+      <AutoIncrement>2</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1193,7 +1193,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>5</Position>
     </column>
     <index id="334" parent="303" name="PRIMARY">
-      <ColNames>id_paciente</ColNames>
+      <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
@@ -1202,55 +1202,48 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="336" parent="304" name="id_glicemia">
+    <column id="336" parent="304" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="337" parent="304" name="data">
-      <DataType>varchar(255)|0s</DataType>
+    <column id="337" parent="304" name="horario">
+      <DataType>datetime(6)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="338" parent="304" name="data_refeicao">
-      <DataType>varchar(255)|0s</DataType>
+    <column id="338" parent="304" name="horario_refeicao">
+      <DataType>datetime(6)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="339" parent="304" name="hora">
+    <column id="339" parent="304" name="observacao">
       <DataType>varchar(255)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="340" parent="304" name="hora_refeicao">
-      <DataType>varchar(255)|0s</DataType>
+    <column id="340" parent="304" name="valor">
+      <DataType>double|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="341" parent="304" name="observacao">
-      <DataType>varchar(255)|0s</DataType>
+    <column id="341" parent="304" name="paciente_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="342" parent="304" name="valor">
-      <DataType>decimal(19,2 digit)|0s</DataType>
-      <Position>7</Position>
-    </column>
-    <column id="343" parent="304" name="paciente_id_paciente">
-      <DataType>bigint|0s</DataType>
-      <Position>8</Position>
-    </column>
-    <foreign-key id="344" parent="304" name="FK9u8xmecmlfv1jwjhjyhv0khcn">
-      <ColNames>paciente_id_paciente</ColNames>
-      <RefColNames>id_paciente</RefColNames>
+    <foreign-key id="342" parent="304" name="FKimcl17gsel6bn12vyyfioqpd">
+      <ColNames>paciente_id</ColNames>
+      <RefColNames>id</RefColNames>
       <RefTableName>paciente</RefTableName>
     </foreign-key>
-    <index id="345" parent="304" name="PRIMARY">
-      <ColNames>id_glicemia</ColNames>
+    <index id="343" parent="304" name="PRIMARY">
+      <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="346" parent="304" name="FK9u8xmecmlfv1jwjhjyhv0khcn">
-      <ColNames>paciente_id_paciente</ColNames>
+    <index id="344" parent="304" name="FKimcl17gsel6bn12vyyfioqpd">
+      <ColNames>paciente_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="347" parent="304" name="PRIMARY">
+    <key id="345" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
