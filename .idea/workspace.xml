@@ -5,25 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c97a1c8-5822-4309-b8e0-3c8353edd3d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/Glicemia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaRecenteDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/AlterarGlicemiaForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/GlicemiaForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a7123564-71a0-440c-9bd4-f3ac8283606a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a7123564-71a0-440c-9bd4-f3ac8283606a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/br/com/tcc/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/br/com/tcc/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/Repository/GlicemiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/Repository/GlicemiaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/PacienteConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/PacienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/PacienteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/Repository/GlicemiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/repository/GlicemiaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/Repository/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/repository/PacienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/PacienteConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/GlicemiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/GlicemiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/RegistroGlicemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/RegistroGlicemia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/service/GlicemiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/service/GlicemiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +60,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2ErwvrIKGpFtaV6ICVhvzQlnpWy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -86,7 +82,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucas-Marra/Desktop/projeto_luciana/api-programa-formacao/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucas-Marra/Documents/Intellij/microservices-amigoscode-main&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
@@ -112,7 +108,7 @@
       <recent name="br.com.tcc.vo.form" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerApplication">
+  <component name="RunManager" selected="Spring Boot.PacienteApplication">
     <configuration name="GlicemiaForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.tcc.vo.form.GlicemiaForm" />
       <module name="paciente" />
@@ -175,6 +171,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringMvcView">
+    <option name="showControllers" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2c97a1c8-5822-4309-b8e0-3c8353edd3d7" name="Changes" comment="" />
@@ -192,7 +191,12 @@
       <workItem from="1665356040332" duration="2405000" />
       <workItem from="1665427749735" duration="390000" />
       <workItem from="1665498509229" duration="22603000" />
-      <workItem from="1665603497722" duration="17226000" />
+      <workItem from="1665603497722" duration="17802000" />
+      <workItem from="1665626916890" duration="207000" />
+      <workItem from="1665662685144" duration="14107000" />
+      <workItem from="1665746492095" duration="2866000" />
+      <workItem from="1665786061496" duration="1124000" />
+      <workItem from="1665801341340" duration="1409000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 package br.com.tcc.service;
 
-import br.com.tcc.Repository.GlicemiaRepository;
-import br.com.tcc.Repository.PacienteRepository;
+import br.com.tcc.repository.GlicemiaRepository;
+import br.com.tcc.repository.PacienteRepository;
 import br.com.tcc.model.Paciente;
 import br.com.tcc.model.RegistroGlicemia;
 import br.com.tcc.vo.dto.Glicemia;

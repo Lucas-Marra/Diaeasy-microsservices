@@ -1,6 +1,6 @@
 package br.com.tcc.controller;
 
-import br.com.tcc.Repository.PacienteRepository;
+import br.com.tcc.repository.PacienteRepository;
 import br.com.tcc.service.GlicemiaService;
 import br.com.tcc.vo.dto.Glicemia;
 import br.com.tcc.vo.dto.GlicemiaDto;

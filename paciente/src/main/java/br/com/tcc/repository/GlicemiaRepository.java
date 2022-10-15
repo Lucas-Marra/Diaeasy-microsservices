@@ -1,4 +1,4 @@
-package br.com.tcc.Repository;
+package br.com.tcc.repository;
 
 import br.com.tcc.model.RegistroGlicemia;
 import br.com.tcc.vo.dto.Glicemia;
