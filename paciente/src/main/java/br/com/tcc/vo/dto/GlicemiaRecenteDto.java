@@ -13,8 +13,8 @@ public class GlicemiaRecenteDto {
     private String hora;
 
     public GlicemiaRecenteDto(Glicemia glicemia) {
-        this.setValor(glicemia.getValor());
-        this.setDia(glicemia.getHorario().toLocalDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-        this.setHora(glicemia.getHorario().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm")));
+        this.valor = Double.parseDouble(glicemia.getValor());
+        this.dia = glicemia.getHorario().toLocalDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        this.hora = glicemia.getHorario().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm"));
     }
 }

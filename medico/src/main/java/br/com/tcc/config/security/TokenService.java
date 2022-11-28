@@ -1,12 +1,9 @@
 package br.com.tcc.config.security;
 
-import br.com.tcc.model.Paciente;
-import br.com.tcc.repository.MedicosRepository;
+import br.com.tcc.model.Medico;
 import br.com.tcc.vo.dto.DadosLogin;
-import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
@@ -16,23 +13,21 @@ import java.util.Date;
 @Service
 public class TokenService {
 
-    @Value("${paciente.jwt.expiration}")
+    @Value("${medico.jwt.expiration}")
     private String expiration;
 
-    @Value("${paciente.jwt.secret}")
+    @Value("${medico.jwt.secret}")
     private String secret;
 
-    @Autowired
-    private MedicosRepository medicosRepository;
 
     public DadosLogin gerarToken(Authentication authentication) {
-        Paciente pacienteLogado = (Paciente) authentication.getPrincipal();
+        Medico medicoLogado = (Medico) authentication.getPrincipal();
         Date hoje = new Date();
         Date dataExpiracao = new Date(hoje.getTime() + Long.parseLong(expiration));
 
         String token = Jwts.builder()
-                .setIssuer("API de paciente")
-                .setSubject(pacienteLogado.getId().toString())
+                .setIssuer("API de medico")
+                .setSubject(medicoLogado.getId().toString())
                 .setIssuedAt(hoje)
                 .setExpiration(dataExpiracao)
                 .signWith(SignatureAlgorithm.HS256, secret)
@@ -40,10 +35,9 @@ public class TokenService {
 
         return DadosLogin.builder()
                 .token(token)
-                .id(pacienteLogado.getId())
-                .nome(pacienteLogado.getNome())
-                .medicoResponsavel(medicosRepository.findNomeMedicoById(pacienteLogado.getMedico().getId()))
-                .tipo("paciente")
+                .id(medicoLogado.getId())
+                .nome(medicoLogado.getNome())
+                .tipo("medico")
                 .build();
     }
 
@@ -56,7 +50,7 @@ public class TokenService {
         }
     }
 
-    public Long getIdPaciente(String token) {
+    public Long getIdMedico(String token) {
         return Long.parseLong(
                 Jwts.parser().setSigningKey(this.secret)
                         .parseClaimsJws(token).getBody()

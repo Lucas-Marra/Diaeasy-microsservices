@@ -19,7 +19,7 @@ public class RegistroGlicemia {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     // TODO encriptar valor;
-    private Double valor;
+    private String valor;
     private LocalDateTime horario;
     private LocalDateTime horarioRefeicao;
     private String observacao;

@@ -33,13 +33,18 @@ public class GlicemiaController {
         return glicemiaService.listarRecentes(idPaciente);
     }
 
-    @PutMapping("/alterar/{idPaciente}")
-    public ResponseEntity<Glicemia> alterarGlicemia(@PathVariable Long idPaciente, @RequestBody AlterarGlicemiaForm glicemiaForm) {
-        return glicemiaService.alterar(idPaciente, glicemiaForm);
+    @PutMapping("/alterar")
+    public ResponseEntity<Glicemia> alterarGlicemia( @RequestBody AlterarGlicemiaForm glicemiaForm) {
+        return glicemiaService.alterar(glicemiaForm);
     }
 
     @PostMapping("/registrar/{idPaciente}")
     public ResponseEntity<Glicemia> registrarGlicemia(@PathVariable Long idPaciente, @RequestBody GlicemiaForm glicemiaForm) {
         return glicemiaService.salvar(idPaciente, glicemiaForm);
+    }
+
+    @DeleteMapping("/delete/{idGlicemia}")
+    public ResponseEntity deletarGlicemia(@PathVariable Long idGlicemia) {
+        return glicemiaService.deletar(idGlicemia);
     }
 }

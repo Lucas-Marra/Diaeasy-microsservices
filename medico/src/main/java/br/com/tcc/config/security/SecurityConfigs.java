@@ -1,10 +1,9 @@
 package br.com.tcc.config.security;
 
-import br.com.tcc.repository.PacienteRepository;
+import br.com.tcc.repository.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,7 +21,7 @@ public class SecurityConfigs extends WebSecurityConfigurerAdapter {
     private AutenticacaoService autenticacaoService;
 
     @Autowired
-    private PacienteRepository pacienteRepository;
+    private MedicoRepository medicoRepository;
 
     @Autowired
     private TokenService tokenService;
@@ -43,11 +42,11 @@ public class SecurityConfigs extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
-                .antMatchers( "/auth/**").permitAll()
+                .antMatchers("/auth/**").permitAll()
                 .anyRequest().authenticated()
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and().addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, pacienteRepository), UsernamePasswordAuthenticationFilter.class);
+                .and().addFilterBefore(new AutenticacaoViaTokenFilter(tokenService, medicoRepository), UsernamePasswordAuthenticationFilter.class);
     }
 
     // Static

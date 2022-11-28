@@ -1,9 +1,9 @@
 package br.com.tcc.service;
 
-import br.com.tcc.repository.GlicemiaRepository;
-import br.com.tcc.repository.PacienteRepository;
 import br.com.tcc.model.Paciente;
 import br.com.tcc.model.RegistroGlicemia;
+import br.com.tcc.repository.GlicemiaRepository;
+import br.com.tcc.repository.PacienteRepository;
 import br.com.tcc.vo.dto.Glicemia;
 import br.com.tcc.vo.dto.GlicemiaDto;
 import br.com.tcc.vo.dto.GlicemiaRecenteDto;
@@ -39,11 +39,17 @@ public class GlicemiaService {
     public ResponseEntity<List<GlicemiaRecenteDto>> listarRecentes(Long idPaciente) {
         if(pacienteRepository.findById(idPaciente).isEmpty())
             return ResponseEntity.notFound().build();
-        return ResponseEntity.ok(glicemiaRepository.
+        List<GlicemiaRecenteDto> glicemias = glicemiaRepository.
             findRegistroGlicemiasByPaciente_Id(idPaciente)
             .stream()
             .map(GlicemiaRecenteDto::new)
-            .collect(Collectors.toList()));
+            .collect(Collectors.toList());
+
+        while(glicemias.size() > 3) {
+            glicemias.remove(3);
+        }
+
+        return ResponseEntity.ok(glicemias);
     }
 
     public ResponseEntity<Glicemia> salvar(Long idPaciente, GlicemiaForm glicemiaForm) {
@@ -51,24 +57,29 @@ public class GlicemiaService {
         if (pacienteOpt.isPresent()) {
             RegistroGlicemia rg = glicemiaForm.converter(pacienteOpt.get());
             glicemiaRepository.save(rg);
-            //TODO preencher log de registro
             URI uri = UriComponentsBuilder.newInstance().path("/glicemias/registrar/{idPaciente}")
                 .build().toUri();
             return ResponseEntity.created(uri).body(new Glicemia(rg));
         }
-        // TODO preencher log de erro
         return ResponseEntity.notFound().build();
     }
 
-    public ResponseEntity<Glicemia> alterar(Long idPaciente, AlterarGlicemiaForm glicemiaForm) {
+    public ResponseEntity<Glicemia> alterar(AlterarGlicemiaForm glicemiaForm) {
         Optional<RegistroGlicemia> registroGlicemiaOpt = glicemiaRepository.findById(glicemiaForm.getId());
-        if (registroGlicemiaOpt.isPresent() && registroGlicemiaOpt.get().getId().equals(idPaciente)) {
+        if (registroGlicemiaOpt.isPresent() && registroGlicemiaOpt.get().getId().equals(glicemiaForm.getId())) {
             RegistroGlicemia rg = registroGlicemiaOpt.get();
             glicemiaRepository.save(glicemiaForm.update(rg));
-            //TODO preencher log de registro
             return ResponseEntity.accepted().body(new Glicemia(rg));
         }
-        // TODO preencher log de erro
         return ResponseEntity.notFound().build();
+    }
+
+    public ResponseEntity deletar(Long idGlicemia) {
+        try {
+            glicemiaRepository.deleteById(idGlicemia);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().build();
+        }
     }
 }

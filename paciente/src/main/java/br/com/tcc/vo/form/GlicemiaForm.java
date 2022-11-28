@@ -24,7 +24,7 @@ public class GlicemiaForm {
 
     public RegistroGlicemia converter(Paciente paciente) {
         return RegistroGlicemia.builder().
-            valor(this.valor).
+            valor(String.valueOf(this.valor)).
             horario(LocalDateTime.of(this.data, this.horario)).
             horarioRefeicao(LocalDateTime.of(this.dataRefeicao, this.horarioRefeicao)).
             observacao(this.observacao).

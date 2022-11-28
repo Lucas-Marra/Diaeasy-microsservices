@@ -10,7 +10,6 @@ import java.util.List;
 
 @Repository
 public interface GlicemiaRepository extends JpaRepository<RegistroGlicemia, Long> {
-    // TODO criar paginação;
     @Query(value = "select new br.com.tcc.vo.dto.Glicemia(" +
         "g.id, g.valor, g.horario, g.horarioRefeicao, g.observacao) " +
         "from RegistroGlicemia g " +

@@ -11,19 +11,19 @@ import java.time.format.DateTimeFormatter;
 public class GlicemiaDto {
     private Long id;
     private Double valor;
-    private LocalDate dia;
-    private String hora;
-    private LocalDate diaRefeicao;
-    private String horaRefeicao;
+    private LocalDate data;
+    private String horario;
+    private LocalDate dataRefeicao;
+    private String horarioRefeicao;
     private String observacao;
 
     public GlicemiaDto(Glicemia glicemia) {
         this.id = glicemia.getId();
-        this.valor = glicemia.getValor();
+        this.valor = Double.parseDouble(glicemia.getValor());
         this.observacao = glicemia.getObservacao();
-        this.dia = glicemia.getHorario().toLocalDate();
-        this.hora = glicemia.getHorario().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm"));
-        this.diaRefeicao = glicemia.getHorarioRefeicao().toLocalDate();
-        this.horaRefeicao = glicemia.getHorarioRefeicao().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm"));
+        this.data = glicemia.getHorario().toLocalDate();
+        this.horario = glicemia.getHorario().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm"));
+        this.dataRefeicao = glicemia.getHorarioRefeicao().toLocalDate();
+        this.horarioRefeicao = glicemia.getHorarioRefeicao().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm"));
     }
 }
