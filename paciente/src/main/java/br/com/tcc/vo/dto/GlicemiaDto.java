@@ -19,7 +19,7 @@ public class GlicemiaDto {
 
     public GlicemiaDto(Glicemia glicemia) {
         this.id = glicemia.getId();
-        this.valor = Double.parseDouble(glicemia.getValor());
+        this.valor = glicemia.getValor();
         this.observacao = glicemia.getObservacao();
         this.data = glicemia.getHorario().toLocalDate();
         this.horario = glicemia.getHorario().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm"));

@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Glicemia {
     private Long id;
-    private String valor;
+    private Double valor;
     private LocalDateTime horario;
     private LocalDateTime horarioRefeicao;
     private String observacao;

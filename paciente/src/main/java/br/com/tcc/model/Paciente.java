@@ -12,7 +12,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-// TODO deixar somente getters and setters e tirar builder, settar tamanho das colunas
 @Getter
 @Setter
 @Builder

@@ -23,7 +23,7 @@ public class AlterarGlicemiaForm {
     private String observacao;
 
     public RegistroGlicemia update(RegistroGlicemia registroGlicemia) {
-        registroGlicemia.setValor(String.valueOf(this.valor));
+        registroGlicemia.setValor(this.valor);
         registroGlicemia.setHorario(LocalDateTime.of(this.data, this.horario));
         registroGlicemia.setHorarioRefeicao(LocalDateTime.of(this.dataRefeicao, this.horarioRefeicao));
         registroGlicemia.setObservacao(this.observacao);

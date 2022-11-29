@@ -1,7 +1,6 @@
 package br.com.tcc.repository;
 
 import br.com.tcc.model.Medico;
-import br.com.tcc.model.Paciente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

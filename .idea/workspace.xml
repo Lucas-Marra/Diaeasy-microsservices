@@ -5,48 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c97a1c8-5822-4309-b8e0-3c8353edd3d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/medico/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/MedicoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/config/security/AutenticacaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/config/security/AutenticacaoViaTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/config/security/SecurityConfigs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/config/security/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/controller/AutenticacaoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Glicemia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/IdsPacientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Medico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Paciente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/MedicoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/DadosLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/PacienteDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/form/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/IdsMedicos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/repository/MedicosRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/controller/PacienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/PacienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/service/PacienteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/CriptografiaAesConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ba080ef-5e4f-4de3-99c4-39d00310545e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ba080ef-5e4f-4de3-99c4-39d00310545e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/security/SecurityConfigs.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/security/SecurityConfigs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/security/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/security/TokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/AutenticacaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/AutenticacaoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/MedicoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/PacienteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/PacienteDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/GlicemiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/GlicemiaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/Paciente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/RegistroGlicemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/RegistroGlicemia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/repository/GlicemiaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/repository/GlicemiaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/service/GlicemiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/service/GlicemiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/DadosLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/DadosLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/Glicemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/Glicemia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaRecenteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaRecenteDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/AlterarGlicemiaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/AlterarGlicemiaForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/GlicemiaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/GlicemiaForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paciente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/server/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/mvnw.cmd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +95,7 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "83783684280add7c49adb7fb280e79b2"
+    "spring.configuration.checksum": "5d8a33e382afabd6848b994686498675"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -131,6 +109,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.tcc.service" />
       <recent name="br.com.tcc.model" />
       <recent name="br.com.tcc.config.security" />
       <recent name="br.com.tcc.vo.form" />
@@ -149,7 +128,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.PacienteApplication">
+  <component name="RunManager" selected="Spring Boot.MedicoApplication">
     <configuration name="GlicemiaForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.tcc.vo.form.GlicemiaForm" />
       <module name="paciente" />
@@ -231,8 +210,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PacienteApplication" />
         <item itemvalue="Spring Boot.MedicoApplication" />
+        <item itemvalue="Spring Boot.PacienteApplication" />
         <item itemvalue="Application.LoginForm" />
         <item itemvalue="Application.SecurityConfigs" />
         <item itemvalue="Application.GlicemiaForm" />
@@ -283,7 +262,8 @@
       <workItem from="1669239816846" duration="11454000" />
       <workItem from="1669500187920" duration="4930000" />
       <workItem from="1669562340515" duration="641000" />
-      <workItem from="1669572082324" duration="21902000" />
+      <workItem from="1669572082324" duration="22371000" />
+      <workItem from="1669669769528" duration="10160000" />
     </task>
     <servers />
   </component>

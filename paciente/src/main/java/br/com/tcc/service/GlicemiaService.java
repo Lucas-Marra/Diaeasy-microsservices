@@ -66,10 +66,12 @@ public class GlicemiaService {
 
     public ResponseEntity<Glicemia> alterar(AlterarGlicemiaForm glicemiaForm) {
         Optional<RegistroGlicemia> registroGlicemiaOpt = glicemiaRepository.findById(glicemiaForm.getId());
-        if (registroGlicemiaOpt.isPresent() && registroGlicemiaOpt.get().getId().equals(glicemiaForm.getId())) {
-            RegistroGlicemia rg = registroGlicemiaOpt.get();
-            glicemiaRepository.save(glicemiaForm.update(rg));
-            return ResponseEntity.accepted().body(new Glicemia(rg));
+        if (registroGlicemiaOpt.isPresent()) {
+            if (registroGlicemiaOpt.get().getId().equals(glicemiaForm.getId())) {
+                RegistroGlicemia rg = registroGlicemiaOpt.get();
+                glicemiaRepository.save(glicemiaForm.update(rg));
+                return ResponseEntity.accepted().body(new Glicemia(rg));
+            }
         }
         return ResponseEntity.notFound().build();
     }

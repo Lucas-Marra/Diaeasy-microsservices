@@ -20,9 +20,6 @@ public class GlicemiaController {
     @Autowired
     private GlicemiaService glicemiaService;
 
-    @Autowired
-    private PacienteRepository pacienteRepository;
-
     @GetMapping("/{idPaciente}")
     public ResponseEntity<List<GlicemiaDto>> listar(@PathVariable Long idPaciente) {
         return glicemiaService.listarPorPaciente(idPaciente);
