@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c97a1c8-5822-4309-b8e0-3c8353edd3d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/controller/PacienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/PacienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/service/PacienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/config/CriptografiaAesConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/config/CriptografiaAesConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/RegistroGlicemia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/GlicemiaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/Glicemia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ba080ef-5e4f-4de3-99c4-39d00310545e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ba080ef-5e4f-4de3-99c4-39d00310545e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/repository/MedicoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/PacienteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/vo/dto/PacienteDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/GlicemiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/controller/GlicemiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/RegistroGlicemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/model/RegistroGlicemia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/service/GlicemiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/service/GlicemiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/Glicemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/Glicemia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaRecenteDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/dto/GlicemiaRecenteDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/AlterarGlicemiaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/AlterarGlicemiaForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/GlicemiaForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/java/br/com/tcc/vo/form/GlicemiaForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/controller/PacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Glicemia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/IdsPacientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/model/Medico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/java/br/com/tcc/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medico/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/medico/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paciente/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paciente/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/paciente/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paciente/src/main/resources/data.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,31 +74,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JPA.DatabaseSchemaImportDialog": "8ba080ef-5e4f-4de3-99c4-39d00310545e",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/lucas/Desktop/Projects/Intellij/Diaeasy-microsservices/medico/src/main/resources",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "5d8a33e382afabd6848b994686498675"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;8ba080ef-5e4f-4de3-99c4-39d00310545e&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lucas/Desktop/Projects/Intellij/Diaeasy-microsservices/medico/src/main/resources&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5d8a33e382afabd6848b994686498675&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "oracle",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;oracle&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -118,11 +113,11 @@
       <recent name="$PROJECT_DIR$/medico/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.tcc.vo.dto" />
+      <recent name="br.com.tcc.repository" />
+      <recent name="br.com.tcc.config" />
+      <recent name="br.com.tcc.model" />
       <recent name="br.com.tcc.vo" />
-      <recent name="br.com.tcc.controller" />
-      <recent name="br.com.tcc.config.security" />
-      <recent name="" />
-      <recent name="config" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
@@ -263,7 +258,8 @@
       <workItem from="1669500187920" duration="4930000" />
       <workItem from="1669562340515" duration="641000" />
       <workItem from="1669572082324" duration="22371000" />
-      <workItem from="1669669769528" duration="10160000" />
+      <workItem from="1669669769528" duration="10621000" />
+      <workItem from="1669746768995" duration="8715000" />
     </task>
     <servers />
   </component>

@@ -29,9 +29,6 @@ public class Medico implements UserDetails {
     private String email;
     private String senha;
 
-    @OneToMany
-    private List<IdsPacientes> pacientes;
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Set<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();

@@ -1,14 +1,15 @@
 package br.com.tcc.service;
 
 import br.com.tcc.model.Paciente;
+import br.com.tcc.repository.GlicemiaRepository;
 import br.com.tcc.repository.PacienteRepository;
+import br.com.tcc.vo.dto.GlicemiaDto;
 import br.com.tcc.vo.dto.PacienteDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -18,6 +19,9 @@ public class PacienteService {
 
     @Autowired
     private PacienteRepository pacienteRepository;
+
+    @Autowired
+    private GlicemiaRepository glicemiaRepository;
 
     public ResponseEntity registrar(Long idMedico, Paciente paciente) {
         paciente.setMedicoId(idMedico);
@@ -49,5 +53,13 @@ public class PacienteService {
             }
         }
         return ResponseEntity.notFound().build();
+    }
+
+    public ResponseEntity buscarGlicemiaPorPaciente(Long idPaciente) {
+        if(pacienteRepository.findById(idPaciente).isEmpty())
+            return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(glicemiaRepository
+                .findRegistroGlicemiasByPacienteId(idPaciente)
+                .stream().map(GlicemiaDto::new).collect(Collectors.toList()));
     }
 }

@@ -26,6 +26,11 @@ public class PacienteController {
         return pacienteService.buscarPorMedico(idMedico);
     }
 
+    @GetMapping("/glicemias/{idPaciente}")
+    public ResponseEntity buscarGlicemiasPorPaciente(@PathVariable Long idPaciente) {
+        return pacienteService.buscarGlicemiaPorPaciente(idPaciente);
+    }
+
     @PutMapping("/alterar")
     public ResponseEntity alterarPaciente(@RequestBody PacienteDto paciente) {
         return pacienteService.alterarPaciente(paciente);
